@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>T&K House Service — Smithtown, NY</title>
+  <meta name="description" content="T&K House Service — Lawn mowing, trimming, snow removal, power washing, pet sitting, gutter cleaning, painting, car detailing and more in Smithtown, NY (11787).">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--accent:#2f8f4a;--dark:#0b1720;--muted:#6b7280;--card:#ffffff;--bg:#f6f8fb}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.5;color:var(--dark);background:var(--bg)}
+    header{background:linear-gradient(180deg,rgba(47,143,74,0.08),transparent);padding:28px 20px;border-bottom:1px solid #e9eef3}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px}
+    nav a{margin-left:18px;color:var(--dark);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:36px 0}
+    .hero h1{font-size:32px;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted)}
+    .hero-buttons{margin-top:14px;display:flex;gap:12px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(11,23,32,0.04)}
+
+    .services{margin:36px 0}
+    .services-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .service-item{padding:12px;border-radius:10px;border:1px solid #eef3f6;background:white}
+
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px;cursor:pointer}
+
+    .about, .contact, footer{margin:36px 0}
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .contact-card{padding:18px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfeff);border:1px solid #e6f0ea}
+    .form input,.form textarea{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid #e6eef2}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .services-list{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(3,1fr)}
+    }
+    @media (max-width:640px){
+      nav{display:none}
+      .topbar{flex-direction:column;align-items:flex-start}
+      .hero{padding:18px 0}
+      .grid{grid-template-columns:1fr}
+      .services-list{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+    }
+
+    /* modal */
+    .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:60;padding:20px;visibility:hidden;opacity:0;transition:opacity .18s}
+    .modal.open{visibility:visible;opacity:1}
+    .modal img{max-width:100%;max-height:80vh;border-radius:10px}
+
+    /* footer */
+    footer{padding:22px 0;color:var(--muted);border-top:1px solid #eef3f6}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo">T&K</div>
+          <div>
+            <div style="font-weight:800">T&amp;K House Service</div>
+            <div class="small">Smithtown, NY — 11787 • +1 (631) 530-5205</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="cta">Get a Quote</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Reliable home &amp; yard services — indoor + outdoor</h1>
+        <p>Local. Trusted. Fast. From lawn mowing and snow removal to power washing, pet &amp; house sitting, and car detailing — we do the job right in Smithtown, NY (11787).</p>
+        <div class="hero-buttons">
+          <a class="btn" href="tel:+16315305205">Call +1 (631) 530-5205</a>
+          <a class="small" href="mailto:TnKlandscapers@gmail.com">Email us</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin-top:0">Why choose T&amp;K?</h3>
+          <ul class="small">
+            <li>Experienced local team — insured and reliable.</li>
+            <li>Fast responses and flexible scheduling.</li>
+            <li>One-stop shop for indoor & outdoor needs.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Service area</h3>
+          <p class="small">Smithtown, NY 11787 and nearby Suffolk County neighborhoods. We offer seasonal contracts and one-off jobs.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Hours</h3>
+          <p class="small">Mon–Sat 7:00am–6:00pm • Snow removal: 24/7 on-call during storms</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <p class="small">Comprehensive services tailored to homeowners and small businesses.</p>
+      <div class="services-list" style="margin-top:12px">
+        <div class="service-item">Lawn mowing &amp; edging</div>
+        <div class="service-item">Trimming &amp; hedging</div>
+        <div class="service-item">Leaf cleanup</div>
+        <div class="service-item">Snow removal</div>
+        <div class="service-item">Power washing</div>
+        <div class="service-item">Gutter cleaning</div>
+        <div class="service-item">Pet sitting &amp; house sitting</div>
+        <div class="service-item">Furniture assembly</div>
+        <div class="service-item">Painting &amp; interior cleaning</div>
+        <div class="service-item">Car detailing</div>
+        <div class="service-item">General handyman &amp; odd jobs</div>
+        <div class="service-item">And other indoor/outdoor needs — ask us!</div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p class="small">Examples — replace these with photos of your own work for best results.</p>
+      <div class="gallery" style="margin-top:12px">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="lawn" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1501004318644-6e8e1f1f1a56?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="hedge" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1587502536263-3f1c7b7d5f0c?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="power wash" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop&crop=entropy" alt="snow plow" loading="lazy">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="card">
+        <h2>About T&amp;K House Service</h2>
+        <p class="small">T&amp;K House Service is a family-run local business based in Smithtown, NY. We specialize in both indoor and outdoor home services — from routine lawn care and seasonal snow removal to pet sitting, furniture assembly, and car detailing. Our goal is simple: make life easier for homeowners and small businesses with dependable, high-quality service.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact &amp; Get a Quote</h2>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-card">
+            <strong>Phone</strong>
+            <div style="margin-top:6px"><a class="small" href="tel:+16315305205">+1 (631) 530-5205</a></div>
+
+            <div style="margin-top:12px"><strong>Email</strong>
+            <div style="margin-top:6px"><a class="small" href="mailto:TnKlandscapers@gmail.com">TnKlandscapers@gmail.com</a></div></div>
+
+            <div style="margin-top:12px"><strong>Address / Area</strong>
+            <div class="small" style="margin-top:6px">Smithtown, New York 11787</div></div>
+
+            <div style="margin-top:12px"><strong>Quick info</strong>
+              <ul class="small" style="margin:8px 0 0 18px">
+                <li>Insured &amp; background-checked team</li>
+                <li>Free estimates — on-site or virtual</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top:12px" class="small">Prefer a tailored estimate? Call or email and tell us the job, frequency, and any access notes (gate code, parking).</div>
+        </div>
+
+        <div>
+          <div class="contact-card form">
+            <form onsubmit="handleSubmit(event)">
+              <label class="small">Full name</label>
+              <input type="text" id="name" placeholder="Your name" required>
+              <label class="small">Phone or email</label>
+              <input type="text" id="contact" placeholder="Phone or email" required>
+              <label class="small">Service needed</label>
+              <input type="text" id="service" placeholder="e.g. lawn mowing, gutter clean" required>
+              <label class="small">Message / address / preferred date</label>
+              <textarea id="message" rows="4" placeholder="Add details..." required></textarea>
+              <div style="margin-top:12px;display:flex;gap:8px;align-items:center;justify-content:flex-end">
+                <button type="submit" class="btn">Send request</button>
+              </div>
+            </form>
+            <div id="formMsg" class="small" style="margin-top:8px;color:var(--muted)"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px">
+        <iframe title="Map" src="https://www.google.com/maps?q=Smithtown+NY+11787&output=embed" style="width:100%;height:260px;border:0;border-radius:10px"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div class="small">© <strong>T&amp;K House Service</strong> — Smithtown, NY (11787)</div>
+      <div class="small">Phone: <a href="tel:+16315305205">+1 (631) 530-5205</a> • Email: <a href="mailto:TnKlandscapers@gmail.com">TnKlandscapers@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <!-- Image modal -->
+  <div id="modal" class="modal" onclick="closeModal(event)"><img id="modalImg" src="" alt=""></div>
+
+  <script>
+    // simple gallery modal
+    document.querySelectorAll('.gallery img').forEach(img=>{
+      img.addEventListener('click',()=>{
+        document.getElementById('modalImg').src=img.src;document.getElementById('modal').classList.add('open')
+      })
+    })
+    function closeModal(e){if(e.target.id==='modal' || e.target.id==='modalImg')document.getElementById('modal').classList.remove('open')}
+
+    // simple form handler — uses mailto fallback
+    function handleSubmit(e){e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const contact=document.getElementById('contact').value.trim();
+      const service=document.getElementById('service').value.trim();
+      const message=document.getElementById('message').value.trim();
+      const subject=encodeURIComponent('Service request from '+name+' — '+service);
+      const body=encodeURIComponent('Name: '+name+'\nContact: '+contact+'\nService: '+service+'\nMessage: '+message);
+      const mailto='mailto:TnKlandscapers@gmail.com?subject='+subject+'&body='+body;
+      // try opening mail client
+      window.location.href=mailto;
+      document.getElementById('formMsg').textContent='Opening your mail app to send the request. If nothing happens, email TnKlandscapers@gmail.com with the details.';
+    }
+
+    // Add local structured data for SEO
+    (function(){
+      const ld = {
+        "@context":"https://schema.org",
+        "@type":"LocalBusiness",
+        "name":"T&K House Service",
+        "image":"https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop&crop=entropy",
+        "telephone":"+16315305205",
+        "email":"TnKlandscapers@gmail.com",
+        "address":{
+          "@type":"PostalAddress",
+          "addressLocality":"Smithtown",
+          "addressRegion":"NY",
+          "postalCode":"11787",
+          "addressCountry":"US"
+        },
+        "areaServed":"Smithtown, NY and nearby areas",
+        "priceRange":"$",
+        "url":window.location.href
+      };
+      const s=document.createElement('script');s.type='application/ld+json';s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+    })();
+  </script>
+</body>
+</html>
